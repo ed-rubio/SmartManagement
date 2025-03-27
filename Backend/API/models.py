@@ -1,6 +1,7 @@
 
 from django.db import models
 
+
 # MODELO: Productos
 class Product(models.Model):
     sku = models.CharField(max_length=16, unique=True,
