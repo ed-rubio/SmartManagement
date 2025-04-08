@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @theme {
   --color-Navbar: #222831;
+  --color-Base: #F1EFF2;
 }
 
 :root {
@@ -10,7 +11,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: white;
+  background-color: var(--color-Base);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -31,8 +32,11 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  place-content: center center;
+  box-sizing: border-box;
+  background-color: var(--color-Base);
+  color: var(--color-Base);
+  overflow-x: hidden;
 }
 
 h1 {

@@ -1,11 +1,14 @@
 import './CSS/index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { Children, StrictMode } from 'react'
+import { StrictMode, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
+
+// Imports for routes
 import Home from './routes/pages/Home.jsx'
 import EoqPage from './routes/pages/EoqPage.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
-import App from './App.jsx'
+
+const App  = lazy(() => import('./App.jsx'))
 
 const router = createBrowserRouter([
   {
@@ -13,11 +16,11 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/home',
+        path: '/',
         element: <Home />
       },
       {
-        path: '/eogpage',
+        path: '/Eoqpage',
         element: <EoqPage />
       }
     ]

@@ -1,8 +1,9 @@
+import TopTittle from "../../components/home_components/TopTittle"
+
 const Home = () => {
   return (
-    <div className="">
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
+    <div className="pb-120.5 pt-20">
+     <TopTittle />
     </div>
   )
 }
