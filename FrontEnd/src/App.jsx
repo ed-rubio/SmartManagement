@@ -1,10 +1,10 @@
-import './CSS/index.css'
+import React from 'react';
 
 function App() {
 
   return (
     <>
-      <div className='bg-green'>
+      <div className=''>
 
       </div>
     </>
