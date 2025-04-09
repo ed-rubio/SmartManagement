@@ -10,7 +10,7 @@ const Home = ({ user, setUser }) => {
   return (
     <div className="w-full min-h-screen bg-white text-gray-800">
       {/* Hero Section */}
-      <section className="w-full h-[60vh] bg-Base flex flex-col items-center justify-center text-center px-6">
+      <section className="w-full h-[60vh] bg-Base flex flex-col items-center justify-center text-center px-6 py-5">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Evita pérdidas. Optimiza tus pedidos.
         </h1>
