@@ -1,0 +1,49 @@
+
+.main-navbar {
+    user-select: none;
+    background-color: #222831;
+    width: 100dvw; height: 6rem;
+    box-shadow: 0 .4rem 2rem rgba(28, 28, 30, .2);
+
+    align-items: center;
+    position: sticky; top: 0;
+    justify-content: space-between;
+    display: flex; flex-direction: row;
+}
+
+.mn-section-one, .mn-section-two {
+    height: 100%; width: auto;
+    display: flex; align-items: center;
+}
+
+.navbar-logo {
+    margin-right: 2rem;
+    height: 3.5rem;
+    aspect-ratio: 1/1;
+}
+
+.mn-section-one {
+    margin-left: 4rem;
+}
+
+.mn-section-two {
+    margin-right: 4rem;
+}
+  
+.mn-link {
+    padding: 0 2rem;  height: 100%;
+    color: #F1EFF2; text-decoration: none;
+    display: flex; align-items: center;
+    transition: all .3s ease;
+}
+  
+.mn-link:hover {
+    color: #00adb5;
+}
+  
+.mn-link-text {
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'D-DIN', sans-serif;
+}

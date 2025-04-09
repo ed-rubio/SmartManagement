@@ -1,0 +1,191 @@
+
+.math-section {
+    display: flex; flex-direction: column;
+    align-items: center;
+
+    padding: 0;
+    box-shadow: none;
+    width: 100%; min-width: 100%;
+    background-color: transparent;
+}
+
+.math-title {
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'D-DIN', sans-serif;
+}
+
+.math-subtitle {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'D-DIN Condensed', sans-serif;
+}
+
+.math-products {
+    margin-top: 4rem;
+    width: 80%; padding: 4rem;
+    display: flex; flex-direction: column;
+}
+
+.math-products-search {
+    justify-content: space-between;
+    display: flex; flex-direction: row;
+}
+
+.math-input {
+    background-color: transparent;
+    width: 30rem; max-width: 30rem;
+
+    border-radius: 0%;
+    border: none; outline: none;
+    color: #222831;
+    font-family: 'D-DIN', sans-serif; font-size: large;
+    border-bottom: .12rem solid rgba(34, 40, 49, .4);
+}
+  
+.math-input:focus {
+    border-bottom: .12rem solid #222831;
+}
+  
+.math-input::placeholder {
+    color: rgba(34, 40, 49, .4);
+}
+
+.math-products-search-suggestions {
+    z-index: 40; background-color: #F1EFF2;
+    position: absolute; width: calc(32rem - .12rem);
+    border: .12rem solid #222831;
+}
+
+.math-products-search-suggestions ul {
+    list-style: none;
+    padding: .4rem; margin: 0;
+}
+
+.math-products-search-suggestions li {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.math-products-search-suggestions li:hover {
+    background-color: #222831;
+    color: #F1EFF2;
+}
+
+.math-products-selected {
+    padding: .8rem; margin-top: 1rem;
+    display: flex; flex-direction: column;
+}
+
+.math-products-selected-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 1rem; color: #222831;
+    font-family: 'D-DIN', sans-serif;
+}
+
+.math-products-selected-table thead {
+    border-bottom: .2rem solid #DDDDDD;
+    background-color: #DDDDDD
+}
+
+.math-products-selected-table th {
+    padding: .8rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+.math-products-selected-table td {
+    padding: .6rem;
+    border-bottom: .2rem solid #DDDDDD
+}
+
+.math-products-selected-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.math-products-selected-table input[type='number'] {
+    color: #222831; font-size: .92rem;
+    max-width: 4rem; padding: .4rem;
+    background-color: #DDDDDD;
+    border: none; outline: none;
+    border-radius: 0;
+    --webkit-appearance: none;
+}
+
+.math-products-selected-table .remove-button {
+    background: none;
+    color: #DC3545;
+    border: none; outline: none;
+    padding: .4rem .8rem;
+    cursor: pointer;
+    font-size: .92rem;
+    transition: all .3s ease;
+}
+
+.math-products-selected-table .remove-button:hover {
+    background-color: #F8D7DA;
+}
+
+.math-products-selected strong {
+    font-style: italic;
+    color: #777777;
+}
+
+.eoq-button {
+    background: none;
+    color: #0D6EFD;
+    border: none; outline: none;
+    padding: .4rem .8rem;
+    cursor: pointer;
+    font-size: .92rem;
+    transition: all .3s ease;
+    margin-left: 1rem;
+}
+
+.eoq-button:hover {
+    background-color: #DDEEFF;
+}
+
+.text-random {
+    color: #777777;
+    margin-left: 1rem;
+    font-style: italic;
+    font-family: 'D-DIN', sans-serif;
+}
+
+.math-eoq-results {
+    width: 80%; padding: 0 4rem;
+
+    justify-content: space-between;
+    display: flex; flex-direction: row;
+}
+
+.calculate-button {
+    border-radius: 0;
+    color: #F1EFF2;
+    font-family: 'D-DIN', sans-serif;
+    margin-left: 1rem; height: 3rem;
+    width: 20rem; background-color: #222831;
+}
+
+.order-total-cost {
+    padding: 1.2rem; gap: .4rem;
+    display: flex; flex-direction: column;
+    width: 20rem; background-color: #DDDDDD;
+}
+
+.order-total-cost strong, .order-total-cost small {
+    color: #222831; text-transform: uppercase;
+}
+
+.order-total-cost strong {
+    font-family: 'D-DIN Condensed', sans-serif;
+}
+
+.order-total-cost small {
+    font-size: 1.2rem;
+    font-family: 'D-DIN', sans-serif;
+}

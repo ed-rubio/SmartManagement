@@ -1,7 +1,7 @@
-import "./Formulario.css";
+import "../statics/Formulario.css";
 import { useState } from "react";
 
-export function Formulario({ setUser }) {
+function Formulario({ setUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
@@ -29,7 +29,7 @@ export function Formulario({ setUser }) {
 
       if (response.ok) {
         if (data.message === "Inicio de sesión exitoso" && data.user) {
-          setUser([data.user.username]); // Establece el username del usuario
+          setUser([data.user]);
         } else {
           setError(true);
           setMensajeError(data.error || "Error desconocido al iniciar sesión");
@@ -67,4 +67,6 @@ export function Formulario({ setUser }) {
       {error && <p className="error">{mensajeError}</p>}
     </section>
   );
-}
+};
+
+export default Formulario;
