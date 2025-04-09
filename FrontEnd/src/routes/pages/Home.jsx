@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 const Home = ({ user, setUser }) => {
   const handleLogout = () => {
@@ -16,9 +18,11 @@ const Home = ({ user, setUser }) => {
           Nuestra app web te ayuda a calcular la cantidad ideal de productos a pedir,
           reduciendo el sobreinventario y minimizando costos.
         </p>
+        <Link to='/instrucciones' className='mn-link'>
         <button className="bg-blue-600 text-white px-6 py-3 rounded-2xl hover:bg-blue-700 transition">
           Ver cómo funciona
         </button>
+        </Link>
       </section>
 
       {/* Beneficios */}
