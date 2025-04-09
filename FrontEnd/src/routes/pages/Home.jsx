@@ -1,11 +1,17 @@
-import TopTittle from "../../components/home_components/TopTittle"
+const Home = ({ user, setUser }) => {
+ 
+  const handleLogout = () => {
+    // Limpiar el localStorage
+    localStorage.removeItem('user');
+    setUser([]);
+  };
 
-const Home = () => {
   return (
-    <div className="pb-120.5 pt-20">
-     <TopTittle />
+    <div>
+      <h1>Bienvenido</h1>
+      <h2>{user}</h2>
+      <button onClick={handleLogout}>Cerrar sesión</button>
     </div>
-  )
+  );
 }
-
-export default Home
+export default Home;
